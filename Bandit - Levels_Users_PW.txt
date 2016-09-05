@@ -1,0 +1,258 @@
+0
+bandit0
+bandit0
+1
+bandit1
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+2
+bandit2
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+3
+bandit3
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+4
+bandit4
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+5
+bandit5
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+6
+find -size 1033c -readable ! -executable
+bandit6
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+7
+find / -size 33c -user bandit7 -group bandit6
+bandit7
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+8
+bandit8
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+9
+cat data.txt | sort |  uniq --count
+bandit9
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+10
+cat data.txt | sort | strings | grep =
+bandit10
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+11
+base64 --decode data.txt
+bandit11
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+12
+tr 'A-Za-z' 'N-ZA-Mn-za-m' <<<"Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh"
+bandit12
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+13
+file data.txt
+gzip -dk -S txt /tmp/nehti/uncompressed.txt
+tar -xf data6.bin
+bzip2 -dk data6.bin
+bandit13
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+14
+ssh -i ssh_key_file localhost -l bandit14
+bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+15
+telnet localhost 30000
+bandit15
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+16
+openssl s_client -host localhost -port 30001 -ign_eof
+bandit16
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+17
+nmap localhost -p 31000-32000
+nmap -sV localhost -p 31000-32000
+PORT      STATE SERVICE VERSION
+31046/tcp open  echo
+31518/tcp open  msdtc   Microsoft Distributed Transaction Coordinator (error)
+31691/tcp open  echo
+31790/tcp open  msdtc   Microsoft Distributed Transaction Coordinator (error)
+31960/tcp open  echo
+
+openssl s_client -host localhost -port 31790 -ign_eof
+vi /tmp/key
+Copy this text within :
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+
+chmod 700 /tmp/key
+ssh -i /tmp/nehti16/key16 localhost -l bandit17
+
+bandit17
+xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+18
+
+bandit18
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+19
+ssh -t bandit18@localhost vi readme
+bandit19
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+20
+./bandit20-do cat /etc/bandit_pass/bandit20
+bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+21
+1st Login : nc -l 12345
+2nd Login : ./suconnect 12345
+1st Login : GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+bandit21
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+22
+bandit21@melinda:~$ more /etc/cron.d/cronjob_bandit22
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+bandit21@melinda:~$ more /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+bandit21@melinda:~$ more /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+bandit22
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+23
+bandit22@melinda:~$ more /etc/cron.d/cronjob_bandit23
+* * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+bandit22@melinda:~$ more /usr/bin/cronjob_bandit23.sh
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+bandit22@melinda:~$ myname=bandit23
+bandit22@melinda:~$ mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+bandit22@melinda:~$ echo $mytarget
+8ca319486bfbbc3663ea0fbe81326349
+bandit22@melinda:~$ more /tmp/8ca319486bfbbc3663ea0fbe81326349
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+bandit23
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+24
+bandit23@melinda:/tmp/zw$ cat gimmepassword.sh 
+#!/bin/bash
+
+cat /etc/bandit_pass/bandit24 > /tmp/zww
+
+bandit23@melinda:/tmp/zw$ chmod 777 gimmepassword.sh 
+bandit23@melinda:/tmp/zw$ cp gimmepassword.sh /var/spool/bandit24/
+bandit23@melinda:/tmp/zw$ cat /tmp/zww
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+bandit24
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+25
+#!/bin/bash
+
+COUNTER=5666
+while [  $COUNTER -lt 5670 ]; do
+    echo The counter is $COUNTER
+    printf "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ %04d\n" $COUNTER | nc localhost 30002 >> log.txt
+
+    let COUNTER=COUNTER+1
+done
+
+
+bandit25
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+26
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEApis2AuoooEqeYWamtwX2k5z9uU1Afl2F8VyXQqbv/LTrIwdW
+pTfaeRHXzr0Y0a5Oe3GB/+W2+PReif+bPZlzTY1XFwpk+DiHk1kmL0moEW8HJuT9
+/5XbnpjSzn0eEAfFax2OcopjrzVqdBJQerkj0puv3UXY07AskgkyD5XepwGAlJOG
+xZsMq1oZqQ0W29aBtfykuGie2bxroRjuAPrYM4o3MMmtlNE5fC4G9Ihq0eq73MDi
+1ze6d2jIGce873qxn308BA2qhRPJNEbnPev5gI+5tU+UxebW8KLbk0EhoXB953Ix
+3lgOIrT9Y6skRjsMSFmC6WN/O7ovu8QzGqxdywIDAQABAoIBAAaXoETtVT9GtpHW
+qLaKHgYtLEO1tOFOhInWyolyZgL4inuRRva3CIvVEWK6TcnDyIlNL4MfcerehwGi
+il4fQFvLR7E6UFcopvhJiSJHIcvPQ9FfNFR3dYcNOQ/IFvE73bEqMwSISPwiel6w
+e1DjF3C7jHaS1s9PJfWFN982aublL/yLbJP+ou3ifdljS7QzjWZA8NRiMwmBGPIh
+Yq8weR3jIVQl3ndEYxO7Cr/wXXebZwlP6CPZb67rBy0jg+366mxQbDZIwZYEaUME
+zY5izFclr/kKj4s7NTRkC76Yx+rTNP5+BX+JT+rgz5aoQq8ghMw43NYwxjXym/MX
+c8X8g0ECgYEA1crBUAR1gSkM+5mGjjoFLJKrFP+IhUHFh25qGI4Dcxxh1f3M53le
+wF1rkp5SJnHRFm9IW3gM1JoF0PQxI5aXHRGHphwPeKnsQ/xQBRWCeYpqTme9amJV
+tD3aDHkpIhYxkNxqol5gDCAt6tdFSxqPaNfdfsfaAOXiKGrQESUjIBcCgYEAxvmI
+2ROJsBXaiM4Iyg9hUpjZIn8TW2UlH76pojFG6/KBd1NcnW3fu0ZUU790wAu7QbbU
+i7pieeqCqSYcZsmkhnOvbdx54A6NNCR2btc+si6pDOe1jdsGdXISDRHFb9QxjZCj
+6xzWMNvb5n1yUb9w9nfN1PZzATfUsOV+Fy8CbG0CgYEAifkTLwfhqZyLk2huTSWm
+pzB0ltWfDpj22MNqVzR3h3d+sHLeJVjPzIe9396rF8KGdNsWsGlWpnJMZKDjgZsz
+JQBmMc6UMYRARVP1dIKANN4eY0FSHfEebHcqXLho0mXOUTXe37DWfZza5V9Oify3
+JquBd8uUptW1Ue41H4t/ErsCgYEArc5FYtF1QXIlfcDz3oUGz16itUZpgzlb71nd
+1cbTm8EupCwWR5I1j+IEQU+JTUQyI1nwWcnKwZI+5kBbKNJUu/mLsRyY/UXYxEZh
+ibrNklm94373kV1US/0DlZUDcQba7jz9Yp/C3dT/RlwoIw5mP3UxQCizFspNKOSe
+euPeaxUCgYEAntklXwBbokgdDup/u/3ms5Lb/bm22zDOCg2HrlWQCqKEkWkAO6R5
+/Wwyqhp/wTl8VXjxWo+W+DmewGdPHGQQ5fFdqgpuQpGUq24YZS8m66v5ANBwd76t
+IZdtF5HXs2S5CADTwniUS5mX1HO9l5gUkk+h0cH5JnPtsMCnAUM+BRY=
+-----END RSA PRIVATE KEY-----
+
+
+bandit26
+
+cat /etc/passwd | grep bandit26
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+
+bandit25@melinda:~$ cat /usr/bin/showtext
+#!/bin/sh
+more ~/text.txt
+exit 0
+
+
+ssh -i ~/bandit26.sshkey localhost -l bandit26
+Step1   before exec the command above the size of terminal should be small enough(util you can see 5 line)
+Step2   ssh to localhost
+Step3   type 'v' to enter vi
+Step4   type ':r /etc/bandit_pass/bandit26' to show the password on screen
+
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
+
+
+
+
+

